@@ -7,6 +7,6 @@ docker compose up -d
 this command will run your compose file
 
 ```commandline
-docker compose stop
+docker compose down
 ```
 using this command you can stop and delete running containers
