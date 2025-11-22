@@ -20,4 +20,5 @@ RUN pip install --upgrade pip && \
 
 EXPOSE 8080
 
+# We have only this in requirements to task `ENTRYPOINT ["sh", "-c", “command1 && command2”]`
 ENTRYPOINT ["sh", "-c", "python manage.py migrate && python manage.py runserver 0.0.0.0:8080"]
